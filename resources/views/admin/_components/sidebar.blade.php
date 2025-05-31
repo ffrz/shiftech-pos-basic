@@ -52,14 +52,14 @@
           </li>
         @endif
         {{-- Sales Menu End --}}
-        @if (Auth::user()->canAccess(AclResource::SERVICE_ORDER_LIST))
+        {{-- @if (Auth::user()->canAccess(AclResource::SERVICE_ORDER_LIST))
           <li class="nav-item">
             <a class="nav-link {{ $nav_active == 'service-order' ? 'active' : '' }}" href="{{ url('/admin/service-order') }}">
               <i class="nav-icon fas fa-hand-holding-medical"></i>
               <p>Order Servis</p>
             </a>
           </li>
-        @endif
+        @endif --}}
         {{-- Inventory Menu Begin --}}
         @if (Auth::user()->canAccess(AclResource::INVENTORY_MENU))
           <li class="nav-item {{ $menu_active == 'inventory' ? 'menu-open' : '' }}">
@@ -141,7 +141,7 @@
         {{-- End of Purchasing Menu --}}
 
         {{-- Expense Menu Begin --}}
-        @if (Auth::user()->canAccess(AclResource::EXPENSE_MENU))
+        {{-- @if (Auth::user()->canAccess(AclResource::EXPENSE_MENU))
           <li class="nav-item {{ $menu_active == 'expense' ? 'menu-open' : '' }}">
             <a class="nav-link {{ $menu_active == 'expense' ? 'active' : '' }}" href="#">
               <i class="nav-icon fas fa-money-bill"></i>
@@ -165,11 +165,11 @@
               </li>
             </ul>
           </li>
-        @endif
+        @endif --}}
         {{-- End of Expense Menu --}}
 
         {{-- Expense Menu Begin --}}
-        @if (Auth::user()->canAccess(AclResource::FINANCE_MENU))
+        {{-- @if (Auth::user()->canAccess(AclResource::FINANCE_MENU))
           <li class="nav-item {{ $menu_active == 'finance' ? 'menu-open' : '' }}">
             <a class="nav-link {{ $menu_active == 'finance' ? 'active' : '' }}" href="#">
               <i class="nav-icon fas fa-money-bill-transfer"></i>
@@ -205,10 +205,10 @@
               @endif
             </ul>
           </li>
-        @endif
+        @endif --}}
         {{-- End of Expense Menu --}}
 
-        @if (Auth::user()->canAccess(AclResource::DEBT_MENU))
+        {{-- @if (Auth::user()->canAccess(AclResource::DEBT_MENU))
           <li class="nav-item {{ $menu_active == 'debt' ? 'menu-open' : '' }}">
             <a class="nav-link {{ $menu_active == 'debt' ? 'active' : '' }}" href="#">
               <i class="nav-icon fas fa-file-invoice-dollar"></i>
@@ -232,7 +232,7 @@
               </li>
             </ul>
           </li>
-        @endif
+        @endif --}}
 
         {{-- Report Menu --}}
         @if (Auth::user()->canAccess(AclResource::REPORT_MENU))

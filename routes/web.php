@@ -86,16 +86,16 @@ Route::middleware([Authenticate::class, OnlyAdmin::class])->prefix('admin')->gro
         });
     });
 
-    Route::controller(ServiceOrderController::class)->prefix('service-order')->group(function () {
-        Route::get('', 'index');
-        Route::match(['get', 'post'], 'edit/{id}', 'edit');
-        Route::get('duplicate/{id}', 'duplicate');
-        Route::get('delete/{id}', 'delete');
-        Route::get('detail/{id}', 'detail');
-        Route::post('action/{id}', 'action');
-        Route::get('restore/{id}', 'restore');
-        Route::get('print/{id}', 'print');
-    });
+    // Route::controller(ServiceOrderController::class)->prefix('service-order')->group(function () {
+    //     Route::get('', 'index');
+    //     Route::match(['get', 'post'], 'edit/{id}', 'edit');
+    //     Route::get('duplicate/{id}', 'duplicate');
+    //     Route::get('delete/{id}', 'delete');
+    //     Route::get('detail/{id}', 'detail');
+    //     Route::post('action/{id}', 'action');
+    //     Route::get('restore/{id}', 'restore');
+    //     Route::get('print/{id}', 'print');
+    // });
 
     Route::controller(SalesOrderController::class)->prefix('sales-order')->group(function () {
         Route::get('', 'index');

@@ -12,7 +12,7 @@
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 col-6">
+        {{-- <div class="col-lg-3 col-6">
           <div class="small-box bg-info">
             <div class="inner">
               <h4>{{ $data['active_service_order_count'] }}</h4>
@@ -24,12 +24,12 @@
             <a href="/admin/service-order?order_status=0&service_status=-1&payment_status=-1" class="small-box-footer"><i
                 class="fas fa-arrow-circle-right"></i></a>
           </div>
-        </div>
-        <div class="col-lg-3 col-6">
+        </div> --}}
+        <div class="col-lg-4 col-12">
           <div class="small-box bg-info">
             <div class="inner">
               <h4>{{ $data['active_sales_count'] }}</h4>
-              <p>Order Penjualan Aktif</p>
+              <p>Order Aktif</p>
             </div>
             <div class="icon">
               <i class="fa fa-file-invoice"></i>
@@ -37,7 +37,7 @@
             <a href="/admin/sales-order?status=0" class="small-box-footer"><i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-4 col-12">
           <div class="small-box bg-info">
             <div class="inner">
               <h4><sup style="font-size: 20px">Rp. </sup>{{ format_number($data['total_sales_today']) }}</h4>
@@ -49,11 +49,11 @@
             <a href="#" class="small-box-footer"><i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-4 col-12">
           <div class="small-box bg-info">
             <div class="inner">
               <h4>{{ $data['sales_count_today'] }}</h4>
-              <p>Order Hari Ini</p>
+              <p>Jumlah Order Hari Ini</p>
             </div>
             <div class="icon">
               <i class="fa fa-receipt"></i>

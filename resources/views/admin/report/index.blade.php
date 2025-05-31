@@ -39,7 +39,7 @@
             <li><a href="#">Laporan Rekapitulasi Transaksi Pembelian</a></li>
         </ul>
       </section>
-      <section>
+      {{-- <section>
         <h5>Laporan Pengeluaran</h5>
         <ul>
             <li><a href="{{ url('admin/report/expense/monthly-expense-detail') }}">Laporan Rincian Pengeluaran</a></li>
@@ -52,7 +52,7 @@
             <li><a href="#">Laporan Rincian Transaksi Keuangan</a></li>
             <li><a href="#">Laporan Rekapitulasi Transaksi Keuangan</a></li>
         </ul>
-      </section>
+      </section> --}}
     </div>
   </div>
 @endsection
