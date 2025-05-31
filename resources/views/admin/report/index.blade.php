@@ -15,14 +15,14 @@
           <li><a href="{{ url('admin/report/sales/net-income-statement') }}">Laporan Rekapitulasi Laba / Rugi</a></li>
         </ul>
       </section>
-      <section>
+      {{-- <section>
         <h5>Laporan Servis</h5>
         <ul>
           <li><a href="{{ url('admin/report/service-orders') }}">Laporan Transaksi Servis</a></li>
           <li><a href="{{ url('admin/report/service-orders-completed') }}">Laporan Servis Selesai</a></li>
           <li><a href="{{ url('admin/report/service-orders-on-process') }}">Laporan Servis Dalam Proses</a></li>
         </ul>
-      </section>
+      </section> --}}
       <section>
         <h5>Laporan Inventori</h5>
         <ul>
@@ -32,13 +32,13 @@
           <li><a href="{{ url('admin/report/inventory/stock-recap-by-category') }}">Laporan Rekap Stok Barang Per Kategori</a></li>
         </ul>
       </section>
-      <section>
+      {{-- <section>
         <h5>Laporan Pembelian</h5>
         <ul>
             <li><a href="#">Laporan Rincian Transaksi Pembelian</a></li>
             <li><a href="#">Laporan Rekapitulasi Transaksi Pembelian</a></li>
         </ul>
-      </section>
+      </section> --}}
       {{-- <section>
         <h5>Laporan Pengeluaran</h5>
         <ul>
